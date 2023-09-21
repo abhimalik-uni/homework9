@@ -39,7 +39,11 @@
         "color": {
           "field": "Density",
           "type": "quantitative",
-          "scale": {"type": "linear", "scheme": "reds"},
+          "scale": {
+"type": "linear",
+"domain": [10, 300, 1200],
+"range": ["#fdbe85", "#fd8d3c", "#e6550d", "#a63603"]
+},
           "legend": {"title": "People / Km^2"}
         },
         "tooltip": [
