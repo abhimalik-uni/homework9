@@ -21,7 +21,7 @@
       },
       {
         "data": {
-          "url": "https://github.com/abhimalik-uni/homework9/blob/5145e0fda66925bad7a3761f903527b077d77a2d/data/csvData.csv"
+          "url": "https://github.com/abhimalik-uni/homework9/blob/6245c921968b3b1b2e6704815979687f4d76d1e9/data/earthquake.csv"
         },
         "mark": {"type": "circle", "tooltip": {"content": "data"}},
         "encoding": {
