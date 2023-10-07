@@ -1,11 +1,12 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "data": {
-      "url": "path/to/your/csvData.csv",
+      "url": "https://raw.githubusercontent.com/abhimalik-uni/homework9/main/data/top3.csv",
       "format": {
         "type": "csv"
       }
     },
+    "width": 400,
     "mark": "line",
     "encoding": {
       "x": {
@@ -18,13 +19,18 @@
         "type": "quantitative"
       },
       "color": {
-        "field": "name",
+        "field": "Country",
         "type": "nominal"
-      }
+      },
+      "tooltip": [
+        {"field": "year", "type": "ordinal", "title": "Year"},
+        {"field": "population", "type": "quantitative", "title": "Population"},
+        {"field": "Country", "type": "nominal", "title": "Country"}
+      ]
     },
     "transform": [
       {
-        "filter": {"field": "name", "oneOf": ["China", "India", "United States of America"]}
+        "filter": {"field": "Country", "oneOf": ["China", "India", "United States of America"]}
       }
     ]
   }
